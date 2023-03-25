@@ -88,10 +88,10 @@ public class AutoGuma {
 	 * 
 	 * @param precnik nova vrednost za precnik gume
 	 * 
-	 * @throws IllegalArgumentException ako se unese Integer cija je vrednost manja od 13 i veca od 22
+	 * @throws IllegalArgumentException ako se unese Integer cija je vrednost manja od 13 ili veca od 22
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new IllegalArgumentException("Precnik van opsega");
 		this.precnik = precnik;
 	}
@@ -110,10 +110,10 @@ public class AutoGuma {
 	 * 
 	 * @param sirina nova vrednost za sirinu gume
 	 * 
-	 * @throws IllegalArgumentException ako se unese Integer cija je vrednost manja od 135 i veca od 355
+	 * @throws IllegalArgumentException ako se unese Integer cija je vrednost manja od 135 ili veca od 355
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new IllegalArgumentException("Sirina van opsega");
 		this.sirina = sirina;
 	}
